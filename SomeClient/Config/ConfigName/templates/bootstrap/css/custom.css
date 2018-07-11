@@ -1,0 +1,4 @@
+/* for invoice card */
+.iris-card-form .control-label[for="PlanPaymentDate"] {
+  white-space: normal;
+}

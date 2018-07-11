@@ -1,0 +1,10 @@
+{% extends "common_layout.html" %}
+
+{% block body %}
+    <p>Request parameters:</p>
+    <ul>
+    {% for key, item in data %}
+        <li>{{ key }}: {{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
