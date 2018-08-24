@@ -1,0 +1,11 @@
+{
+    "name": "iriscrm/config-some-client",
+    "description": "Config for Some organization",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "SomeClient\\Config\\ConfigName\\": "SomeClient/Config/ConfigName/"
+        }
+    }
+}
