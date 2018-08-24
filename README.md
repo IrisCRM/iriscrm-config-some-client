@@ -17,7 +17,7 @@
         "repositories": [
           {
             "type": "git",
-            "url": "git@gitlab.com:iriscrm/config-some-client.git"
+            "url": "git@github.com:IrisCRM/iriscrm-config-some-client.git"
           }
         ],
         "autoload": {
