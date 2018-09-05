@@ -2,7 +2,7 @@
 
 # Установка
 
-Для подключения данного репозиторий в [проекте-шаблоне](https://github.com/IrisCRM/iriscrm-project) необходимо внести следующие изменения:
+Для использования данного репозитория необходимо установить [проекте-шаблон](https://github.com/IrisCRM/iriscrm-project) согласно [инструкции по установке](https://github.com/IrisCRM/iriscrm-project/blob/master/docs/guides/ru/installation.md). Затем внести следующие изменения:
 1. В composer.json подключить репозиторий, прописав зависимость `iriscrm/config-some-client` в секции `require` и репозиторий в секции `repositories`:
     ```json
     {
@@ -17,7 +17,7 @@
         "repositories": [
           {
             "type": "git",
-            "url": "git@github.com:IrisCRM/iriscrm-config-some-client.git"
+            "url": "https://github.com/IrisCRM/iriscrm-config-some-client.git"
           }
         ],
         "autoload": {
