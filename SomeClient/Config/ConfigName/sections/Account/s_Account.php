@@ -65,4 +65,15 @@ class s_Account extends s_AccountBase
         return GetLinkedValues('City', $value, array('Country', 'Region'), 
                 $this->connection);
     }
+
+    public function getType($params) {
+        $id = $params['id'];
+        $res = $this->_DB->exec(
+            'select t1.code as type ' 
+            . 'from iris_account t0 '
+            . 'left join iris_accounttype t1 on t0.accounttypeid = t1.id '
+            . 'where t0.id = :id',
+            array(':id' => $id));
+        return $res[0];
+    }
 }
